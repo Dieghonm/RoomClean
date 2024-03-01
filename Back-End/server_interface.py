@@ -31,9 +31,6 @@ class ServerInterface:
         self.callback('callback')
         print('interface')
 
-    # def receive_text(self, text):
-    #     print(text)
-
     def start_interface(self):
         self.root.mainloop()
 

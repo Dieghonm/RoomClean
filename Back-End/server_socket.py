@@ -7,9 +7,10 @@ class ServerSocket:
         self.server_socket = None
 
     def start_server(self):
+        print('socket')
         self.server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         self.server_socket.bind((self.host, self.port))
-        self.server_socket.listen(1)
+        self.server_socket.listen(10)
         print(f"Server listening on {self.host}:{self.port}")
 
     def accept_connection(self):
